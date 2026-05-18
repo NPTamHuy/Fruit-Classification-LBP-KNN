@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_path = "custom_images/Tao.jpg"
+image_path = "custom_images/pr.jpg"
 
 image = cv2.imread(image_path)
 if image is None:
@@ -16,7 +16,7 @@ gray = cv2.cvtColor(
 )
 
 # RESIZE FOR VISUALIZATION
-gray = cv2.resize(gray, (10, 10))
+gray = cv2.resize(gray, (20, 20))
 
 # PRINT PIXEL MATRIX
 print("\nMa tran pixel grayscale:\n")
