@@ -25,7 +25,9 @@ print("Dang tao scaler...")
 for image in train_images:
 
     processed = preprocess_image(image)
+
     lbp_features = extract_lbp_features(processed)
+
     color_features = extract_color_histogram(image)
 
     features = np.hstack([
@@ -34,8 +36,9 @@ for image in train_images:
     ])
 
     X_train.append(features)
-    X_train = np.array(X_train)
 
+
+X_train = np.array(X_train)
 
 # FIT SCALER
 scaler = StandardScaler()
