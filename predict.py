@@ -43,7 +43,7 @@ X_train_scaled = scaler.transform(X_train)
 
 model = load_model("models/knn_model.pkl")
 
-image_path = r"custom_images/strawberry_test.jpg"
+image_path = r"custom_images/strawberry1.jpg"
 
 image = cv2.imread(image_path)
 
